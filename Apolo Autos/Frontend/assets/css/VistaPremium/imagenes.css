@@ -1,0 +1,74 @@
+.main {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.main .track ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+    width: 100%;
+}
+
+.main .track ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    opacity: 0;
+    transition: opacity .7s ease;
+    -webkit-transition: opacity .7s ease;
+    -moz-transition: opacity .7s ease;
+    -ms-transition: opacity .7s ease -o-transition: opacity .7s ease
+}
+
+.main .track ul li:first-child {
+    opacity: 1;
+}
+
+.main .track ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.slides a {
+    border: 2px solid #FFC100;
+    height: 100px;
+}
+
+.slides a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .track ul li:target {
+    opacity: 1;
+}
+
+.slides a:hover {
+    border: 2px solid black;
+}
+
+@media screen and (max-width:800px) {
+    .main {
+        width: 100%;
+        margin: 60px auto;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .main {
+        margin-left: -200px !important;
+        width: 80%;
+        margin: 60px auto;
+    }
+}

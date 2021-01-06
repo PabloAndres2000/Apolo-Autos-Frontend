@@ -1,0 +1,19 @@
+.container-portada {
+    background-image: url("./assets/image/carretera4k.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 640px;
+}
+
+.imagebb {
+    background: url("./assets/image/50C.jpg");
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    height: 670px;
+}
+
+body {
+    overflow-x: hidden;
+}
